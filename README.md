@@ -11,3 +11,4 @@ implementation 'com.android.volley:volley:1.1.1'
 3) For java.lang.NoClassDefFoundError:failed resolution of :Lorg/apache/http/ProtocolVersion
 Add this to your AndroidManifest.xml inside the <application> tag:
 <uses-library android:name="org.apache.http.legacy" android:required="false" />
+4) 
