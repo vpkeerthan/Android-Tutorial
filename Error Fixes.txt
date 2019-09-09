@@ -1,0 +1,24 @@
+1) Java 8 in android
+(Dexing error, method.invoke error)
+Set it to java 1.8
+https://developer.android.com/studio/write/java8-support
+
+2) java.lang.NoClassDefFoundError: Failed resolution of: Ljava/lang/management/ManagementFactory;
+
+disable Instant Run from Android Studio:
+File > Settings > Build,Execution,Deployment > Instant Run > Un-check (Enable Instant Run to hot swap code)
+
+3) java.lang.NoClassDefFoundError:failed resolution of :Lorg/apache/http/ProtocolVersion
+
+This is a bug on the Google Play Services side, until it's fixed, you should be able to workaround by adding this to your AndroidManifest.xml inside the <application> tag:
+
+<uses-library android:name="org.apache.http.legacy" android:required="false" />
+
+4) java.lang.RuntimeException: Unable to instantiate application com.example.myapp.AppController: java.lang.IllegalAccessException:
+
+Need to create an app controller class
+
+5) E/Volley: [717] NetworkDispatcher.run: Unhandled exception java.lang.RuntimeException: Bad URL localhost:
+
+Need to add http or https
+https://stackoverflow.com/questions/25130745/android-volley-malformedurlexception-bad-url
