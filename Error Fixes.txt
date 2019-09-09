@@ -22,3 +22,12 @@ Need to create an app controller class
 
 Need to add http or https
 https://stackoverflow.com/questions/25130745/android-volley-malformedurlexception-bad-url
+
+6) java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+
+Change https to http
+https://stackoverflow.com/questions/42218237/java-lang-illegalargumentexception-invalid-character-found-in-method-name-http
+
+7) D/Error.Response: com.android.volley.NoConnectionError: java.io.IOException: Cleartext HTTP traffic to 192.168.0.8 not permitted
+
+https://stackoverflow.com/questions/45940861/android-8-cleartext-http-traffic-not-permitted
