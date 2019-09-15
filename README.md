@@ -11,3 +11,5 @@ implementation 'com.android.volley:volley:1.1.1'
 
 3) Kafka-REST-Android - Creating an Android application that uses kafka for data transmission, please find the below link for the REST end points exposed for kafka services
 https://github.com/vpkeerthan/Kafka/tree/master/KafkaRestService
+
+4) DeviceStatus - An android application that fetches battery health status and network strength from the android device
